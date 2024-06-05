@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './forgotpassword.scss';
+import './index.scss';
 
 const Forgotpassword = () => {
   const [email, setEmail] = useState('');

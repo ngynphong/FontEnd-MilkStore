@@ -8,9 +8,12 @@ import Login from "./pages/login";
 import Promotion from "./pages/promotion";
 import Product from "./pages/product";
 
-import PromotionManagement from"./pages/promotion-management"
+import PromotionManagement from "./pages/promotion-management"
 import Vieworder from "./pages/vieworder";
 import Profile from "./pages/profile";
+import Productcategory from "./pages/productcategory";
+import Aboutme from "./pages/aboutme";
+import Forgotpassword from "./pages/forgotpassword";
 
 function App() {
 
@@ -18,62 +21,78 @@ function App() {
 
     {
       path: "/",
-      element: <Layout/>,
-      children : [
+      element: <Layout />,
+      children: [
         {
           path: "/",
-          element: <HomePage/>, 
-        },   {
+          element: <HomePage />,
+        }, {
           path: "/promotion",
-          element: <Promotion/>
+          element: <Promotion />
+        },
+        {
+          path: "/vieworder",
+          element: <Vieworder />
         },
         {
           path: "/product",
-          element: <Product/>,  
+          element: <Product />,
         }
 
       ]
     },
     {
       path: "/milk-management",
-      element: <MilksManagement/>,
+      element: <MilksManagement />,
     },
     {
       path: "/cart",
-      element: <Cart/>
+      element: <Cart />
     },
     {
       path: "/login",
-      element: <Login/>
+      element: <Login />
     },
     {
-      path:"/register",
-      element:<Register/>
+      path: "/register",
+      element: <Register />
+    },
+    {
+      path: "/forgotpassword",
+      element: <Forgotpassword />
     },
     {
       path: "/promotion-management",
-      element: <PromotionManagement/>
+      element: <PromotionManagement />
     },
     {
-      path:"/vieworder",
-      element:<Vieworder/>
+      path: "/aboutme",
+      element: <Aboutme />
     },
     {
-      path:"/profile",
-      element:<Profile/>
+      path: "/vieworder",
+      element: <Vieworder />
+    },
+    {
+      path: "/profile",
+      element: <Profile />
+    },
+    {
+      path: "/productcategory",
+      element: <Productcategory />
     },
 
-     
+
   ]);
-  
-  return(
-    
+
+  return (
+
 
     <RouterProvider router={router} />
-)
-  
+  )
 
-  }
+
+}
 
 export default App;
 
