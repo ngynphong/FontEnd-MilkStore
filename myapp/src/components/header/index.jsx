@@ -47,9 +47,13 @@ function Header() {
                         <li className="header__userdropdow">
                             <UserOutlined />
                            <ul className="userdropdow">
+                            <Link to="/vieworder">
                            <li>Xem đơn</li>
+                           </Link>
                            <hr />
+                            <Link to="/profile">
                             <li>Hồ sơ của tôi</li>
+                            </Link>
                             <hr/>
                             <Link to="/login">
                             <li>Đăng xuất</li>
