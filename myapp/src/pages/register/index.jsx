@@ -90,8 +90,8 @@ function Register() {
                         </div>
                         <div className="input-box sex">
                             <input
-                                type="text"
-                                placeholder="dd/mm/yyyy"
+                                type="number"
+                                placeholder="tuổi"
                                 value={dob}
                                 onChange={(e) => setDob(e.target.value)}
                             />

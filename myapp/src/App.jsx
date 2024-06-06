@@ -15,6 +15,9 @@ import Productcategory from "./pages/productcategory";
 import Forgotpassword from "./pages/forgotpassword";
 import Aboutme from "./pages/aboutme";
 
+
+
+
 function App() {
 
   const router = createBrowserRouter([
@@ -66,6 +69,7 @@ function App() {
       path: "/forgotpassword",
       element: <Forgotpassword />
     },
+    
     {
       path: "/promotion-management",
       element: <PromotionManagement />
@@ -83,6 +87,7 @@ function App() {
       path: "/productcategory",
       element: <Productcategory />
     },
+    
 
 
   ]);
