@@ -14,6 +14,9 @@ import Profile from "./pages/profile";
 import Productcategory from "./pages/productcategory";
 import Forgotpassword from "./pages/forgotpassword";
 import Aboutme from "./pages/aboutme";
+import Editpassword from "./pages/editpassword";
+import Dashboardpage from "./pages/dashboardpage/dashboardpage";
+
 
 
 
@@ -49,6 +52,11 @@ function App() {
 
       ]
     },
+    {
+      path: "/dashboardpage",
+      element: <Dashboardpage/>
+    },
+    
     {
       path: "/milk-management",
       element: <MilksManagement />,
@@ -87,6 +95,10 @@ function App() {
       path: "/productcategory",
       element: <Productcategory />
     },
+    {
+      path: "/editpassword",
+      element: <Editpassword/>
+    }
     
 
 
