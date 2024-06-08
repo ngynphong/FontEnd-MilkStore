@@ -30,7 +30,8 @@ function Dashboardpage() {
                     />
                     </Link>
                 <Menu
-                    theme="dark"
+                className='menu'
+                    theme="light"
                     mode="inline"
                     defaultSelectedKeys={['1']}
                     items={[

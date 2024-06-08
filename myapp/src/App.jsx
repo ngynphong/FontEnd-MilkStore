@@ -16,6 +16,7 @@ import Forgotpassword from "./pages/forgotpassword";
 import Aboutme from "./pages/aboutme";
 import Editpassword from "./pages/editpassword";
 import Dashboardpage from "./pages/dashboardpage/dashboardpage";
+import Checkout from "./pages/checkout";
 
 
 
@@ -98,7 +99,11 @@ function App() {
     {
       path: "/editpassword",
       element: <Editpassword/>
-    }
+    },
+    {
+      path: "/checkout",
+      element: <Checkout/>
+    },
     
 
 
