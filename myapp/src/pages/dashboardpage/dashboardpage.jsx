@@ -23,12 +23,12 @@ function Dashboardpage() {
     return (
         <Layout className='site-layout-left'>
             <Sider trigger={null} collapsible collapsed={collapsed}>
-                <Link to="/">
-                    <img src="logo.png"
+            <Link className='logo' to="/">
+            <img src="logo.png"
                         alt=""
-                        width={200}
+                        width={10}
                     />
-                </Link>
+                    </Link>
                 <Menu
                     theme="dark"
                     mode="inline"
