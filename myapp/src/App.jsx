@@ -19,6 +19,7 @@ import Editpassword from "./pages/editpassword";
 import Checkout from "./pages/checkout";
 import Dashboardpage from "./components/dashboardpage/dashboardpage";
 import Overviewadmin from "./pages/overview-admin";
+import Graphline from "./pages/chart";
 
 
 
@@ -109,6 +110,10 @@ function App() {
     {
       path: "/overview-admin",
       element: <Overviewadmin/>
+    },
+    {
+      path: "/garph",
+      element: <Graphline/>
     },
    
 

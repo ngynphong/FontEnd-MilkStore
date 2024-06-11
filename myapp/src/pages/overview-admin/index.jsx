@@ -6,7 +6,7 @@ import {
     MoneyCollectOutlined,
 } from '@ant-design/icons';
 import { Link } from "react-router-dom";
-import "./line.jsx"
+
 
 function Overviewadmin() {
     return (
