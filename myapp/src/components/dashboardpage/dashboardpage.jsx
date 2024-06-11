@@ -1,11 +1,12 @@
 
-import { Avatar, Button, Col, Layout, Menu, Row, theme } from 'antd';
+import { Avatar, Button, Card, Col, Divider, Layout, Menu, Row, Space, Typography, theme } from 'antd';
 import {
     MenuFoldOutlined,
     MenuUnfoldOutlined,
     UserOutlined,
     UsergroupDeleteOutlined,
-    HomeOutlined,
+    ProductOutlined, GroupOutlined, UsergroupAddOutlined,
+    HomeOutlined, MoneyCollectOutlined,
     DropboxOutlined,
     DatabaseOutlined,
 } from '@ant-design/icons';
@@ -23,14 +24,14 @@ function Dashboardpage() {
     return (
         <Layout className='site-layout-left'>
             <Sider trigger={null} collapsible collapsed={collapsed}>
-            <Link className='logo' to="/">
-            <img src="logo.png"
+                <Link className='logo' to="/">
+                    <img src="logo.png"
                         alt=""
                         width={10}
                     />
-                    </Link>
+                </Link>
                 <Menu
-                className='menu'
+                    className='menu'
                     theme="light"
                     mode="inline"
                     defaultSelectedKeys={['1']}
@@ -38,12 +39,12 @@ function Dashboardpage() {
                         {
                             key: '1',
                             icon: <HomeOutlined />,
-                            label: 'Home',
+                            label: 'Over view',
                         },
                         {
                             key: '2',
                             icon: <DropboxOutlined />,
-                            label: 'quản lí sữa',
+                            label:<Link to="/milk-management">quản lí sữa</Link>,
                         },
                         {
                             key: '3',
@@ -86,7 +87,9 @@ function Dashboardpage() {
                         <Col md={6}>
                             <div>
                                 <Avatar size="default" icon={<UserOutlined />}>
-                                    <img src="https://static2.yan.vn/YanNews/2167221/201904/dan-mang-xon-xao-voi-hinh-anh-moi-cua-kha-banh-bdaba842.jpg" alt="" />
+                                    <img 
+                                    src="https://static2.yan.vn/YanNews/2167221/201904/dan-mang-xon-xao-voi-hinh-anh-moi-cua-kha-banh-bdaba842.jpg" 
+                                    alt="" />
                                 </Avatar>
                             </div>
                         </Col>
@@ -105,8 +108,54 @@ function Dashboardpage() {
                     }}
                 >
                     <div>
-                        viết ở đây
+                        <Space direction='horizontal'>
+                            <Card>
+                                <Space direction="horizontal">
+                                    <ProductOutlined />
+                                    <small>Sản Phẩm</small>
+                                </Space>
+                                <Typography.Title>234344</Typography.Title>
+                            </Card>
+                            <Card>
+                                <Space direction="horizontal">
+                                    <GroupOutlined />
+                                    <small>Loại</small>
+                                </Space>
+                                <Typography.Title>6</Typography.Title>
+                            </Card>
+                            <Card>
+                                <Space direction="horizontal">
+                                    <UsergroupAddOutlined />
+                                    <Link to="/quanlikhachhang">
+                                        <small>Lượng khách hàng</small>
+                                    </Link>
+                                </Space>
+                                <Typography.Title>234344</Typography.Title>
+                            </Card>
+                            <Card>
+                                <Space direction="horizontal">
+                                    <MoneyCollectOutlined />
+                                    <small>Tổng số tiền bán được</small>
+                                </Space>
+                                <Typography.Title>$234344</Typography.Title>
+                            </Card>
+                        </Space>
+                        <Divider />
+                        {/* gutter là khoảng cách */}
+                        <Row gutter={24}>
+                            <Col span={12}>
+                                <Card>
+                                    <Typography.Title>Something</Typography.Title>
+                                </Card>
+                            </Col>
+                            <Col span={12}>
+                                <Card>
+                                    <Typography.Title>Sometime</Typography.Title>
+                                </Card>
+                            </Col>
+                        </Row>
                     </div>
+
                 </Content>
             </Layout>
         </Layout>

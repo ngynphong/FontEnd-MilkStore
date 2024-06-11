@@ -1,11 +1,18 @@
-.site-layout-left{
-    img{
+.site-layout-left {
+    img {
         width: 10vw;
     }
 }
-.site-layout-backgroud{
+
+//khung bên phải
+.site-layout-backgroud {
     background-color: #fff !important;
-    
+
+}
+
+//khung bên trái
+.ant-layout-sider-children {
+    background-color: #ffffff; // màu trắng
 }
 
 .logo {
@@ -14,7 +21,7 @@
     align-items: center;
     padding: 16px;
     background-color: #FFF4FC;
-    
+
     transition: all 0.3s;
 }
 
@@ -25,5 +32,5 @@
 .sider-menu {
     margin-top: 16px;
     background-color: #FFF4FC;
-    
+
 }

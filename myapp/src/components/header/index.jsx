@@ -30,9 +30,9 @@ function Header() {
                             <Link to="/aboutme">Về chúng tôi</Link>
                         </li>
 
-                        <li>
+                        {/* <li>
                             <Link to="/milk-management">Quản lý sữa</Link>
-                        </li>
+                        </li> */}
                     </div>
                     <div className="header__icon">
                         <li onClick={() =>setIsOpenSearch(true)}>

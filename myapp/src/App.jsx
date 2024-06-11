@@ -15,8 +15,11 @@ import Productcategory from "./pages/productcategory";
 import Forgotpassword from "./pages/forgotpassword";
 import Aboutme from "./pages/aboutme";
 import Editpassword from "./pages/editpassword";
-import Dashboardpage from "./pages/dashboardpage/dashboardpage";
+
 import Checkout from "./pages/checkout";
+import Dashboardpage from "./components/dashboardpage/dashboardpage";
+import Overviewadmin from "./pages/overview-admin";
+
 
 
 
@@ -45,7 +48,6 @@ function App() {
           path: "/vieworder",
           element: <Vieworder />
         },
-
         {
           path: "/product",
           element: <Product />,
@@ -104,8 +106,11 @@ function App() {
       path: "/checkout",
       element: <Checkout/>
     },
-    
-
+    {
+      path: "/overview-admin",
+      element: <Overviewadmin/>
+    },
+   
 
   ]);
 

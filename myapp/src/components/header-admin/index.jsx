@@ -25,10 +25,10 @@ function Header() {
                             <Link to="/promotion-management">Quản lý khuyến mãi</Link>
                         </li>
                         <li>
-                            <Link to="/milk-management">Quản lý sữa</Link>
+                            <Link to="/">Về Chúng tôi</Link>
                         </li>
                         <li>
-                            <Link to="/">Quản lý đơn</Link>
+                            <Link to="/dashboardpage">Quản lý</Link>
                         </li>
                     </div>
                     <div className="header__icon">
