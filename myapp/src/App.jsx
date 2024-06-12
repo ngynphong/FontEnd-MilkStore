@@ -10,7 +10,6 @@ import Product from "./pages/product";
 
 import PromotionManagement from "./pages/promotion-management"
 import Vieworder from "./pages/vieworder";
-import Profile from "./pages/profile";
 import Productcategory from "./pages/productcategory";
 import Forgotpassword from "./pages/forgotpassword";
 import Aboutme from "./pages/aboutme";
@@ -19,7 +18,9 @@ import Editpassword from "./pages/editpassword";
 import Checkout from "./pages/checkout";
 import Dashboardpage from "./components/dashboardpage/dashboardpage";
 import Overviewadmin from "./pages/overview-admin";
-import Graphline from "./pages/chart";
+
+import CustomerManagement from "./pages/customer-management";
+//import ProfileForm from "./pages/profile";
 
 
 
@@ -58,9 +59,9 @@ function App() {
     },
     {
       path: "/dashboardpage",
-      element: <Dashboardpage/>
+      element: <Dashboardpage />
     },
-    
+
     {
       path: "/milk-management",
       element: <MilksManagement />,
@@ -81,7 +82,7 @@ function App() {
       path: "/forgotpassword",
       element: <Forgotpassword />
     },
-    
+
     {
       path: "/promotion-management",
       element: <PromotionManagement />
@@ -91,31 +92,31 @@ function App() {
       path: "/vieworder",
       element: <Vieworder />
     },
-    {
-      path: "/profile",
-      element: <Profile />
-    },
+    // {
+    //   path: "/profile/:UserID",
+    //   element: <ProfileForm />
+    // },
     {
       path: "/productcategory",
       element: <Productcategory />
     },
     {
       path: "/editpassword",
-      element: <Editpassword/>
+      element: <Editpassword />
     },
     {
       path: "/checkout",
-      element: <Checkout/>
+      element: <Checkout />
     },
     {
       path: "/overview-admin",
-      element: <Overviewadmin/>
+      element: <Overviewadmin />
     },
     {
-      path: "/garph",
-      element: <Graphline/>
+      path: "/customer-manager",
+      element: <CustomerManagement />
     },
-   
+
 
   ]);
 

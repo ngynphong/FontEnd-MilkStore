@@ -11,7 +11,8 @@ export const lineChartData = {
     datasets: [
         {
             label: "Steps",
-            data: [3000, 5000, 4500, 6000, 8000, 6000, 7000],
+            //lấy số tiền
+            data: [3000, 5000, 4500, 6000, 9000, 6000, 7000],
             borderColor: "rgb(75, 192, 192)",
             backgroundColor: "rgba(75, 192, 192, 0.2)",
         },

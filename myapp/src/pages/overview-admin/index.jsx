@@ -8,6 +8,32 @@ import {
 import { Link } from "react-router-dom";
 
 
+import { Line } from 'react-chartjs-2'
+import {
+    Chart as
+    ChartJS,
+    CategoryScale,
+    LinearScale,
+    PointElement,
+    LineElement,
+    Title,
+    Tooltip,
+    Legend,
+} from 'chart.js'
+import { lineChartData } from './fake_data';
+
+
+ChartJS.register(
+    CategoryScale,
+    LinearScale,
+    PointElement,
+    LineElement,
+    Title,
+    Tooltip,
+    Legend,
+)
+
+const options = {};
 function Overviewadmin() {
     return (
         <div>
@@ -61,7 +87,8 @@ function Overviewadmin() {
                         <Col span={12}>
                             <Card>
                                 <Typography.Title> 
-                                    <lineGraph/>
+                                <Line options={options} data={lineChartData} />
+                                <h2>Doanh thu trong tuần</h2>
                                 </Typography.Title>
                             </Card>
                         </Col>
@@ -72,7 +99,7 @@ function Overviewadmin() {
                         </Col>
                     </Row>
                 </div>
-
+                
             </Content>
 
 
