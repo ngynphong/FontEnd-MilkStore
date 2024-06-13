@@ -20,6 +20,9 @@ import Dashboardpage from "./components/dashboardpage/dashboardpage";
 import Overviewadmin from "./pages/overview-admin";
 
 import CustomerManagement from "./pages/customer-management";
+
+
+import Resetpassword from "./pages/resetpassword";
 //import ProfileForm from "./pages/profile";
 
 
@@ -47,10 +50,6 @@ function App() {
           element: <Aboutme />
         },
         {
-          path: "/vieworder",
-          element: <Vieworder />
-        },
-        {
           path: "/product",
           element: <Product />,
         }
@@ -58,8 +57,18 @@ function App() {
       ]
     },
     {
-      path: "/dashboardpage",
-      element: <Dashboardpage />
+      path: "/dashboardpage/*",
+      element: <Dashboardpage />,
+      children: [
+        {
+          path: "reset",
+          element: <Resetpassword />
+        },
+        {
+          path: "vieworder",
+          element: <Vieworder />
+        }
+      ]
     },
 
     {
@@ -87,11 +96,6 @@ function App() {
       path: "/promotion-management",
       element: <PromotionManagement />
     },
-
-    {
-      path: "/vieworder",
-      element: <Vieworder />
-    },
     // {
     //   path: "/profile/:UserID",
     //   element: <ProfileForm />
@@ -104,6 +108,7 @@ function App() {
       path: "/editpassword",
       element: <Editpassword />
     },
+
     {
       path: "/checkout",
       element: <Checkout />
