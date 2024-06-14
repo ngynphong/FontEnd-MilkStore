@@ -102,7 +102,7 @@ const Dashboardpage = () => {
                 onCollapse={(value) => setCollapsed(value)}
             >
                 <Link to="/">
-                    <img src="logo.png" alt="Logo" width={100} style={{ margin: "30px" }} />
+                    <img src="logo.png" alt="logo" width={100} style={{ margin: "30px" }} />
                 </Link>
 
                 <Menu

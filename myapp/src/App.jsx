@@ -23,6 +23,7 @@ import CustomerManagement from "./pages/customer-management";
 
 
 import Resetpassword from "./pages/resetpassword";
+import Counsel from "./pages/counsel/counsel";
 //import ProfileForm from "./pages/profile";
 
 
@@ -52,6 +53,10 @@ function App() {
         {
           path: "/product",
           element: <Product />,
+        },
+        {
+          path: "/counsel",
+          element: <Counsel />
         }
 
       ]
